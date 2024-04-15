@@ -8,7 +8,7 @@
   --footer-height: 5.5rem;
 
   /*========== Colors ==========*/
-  /*Color mode HSL(hue, saturation, lightness)*/
+  /*Color mode HSL(hex)*/
   --main-color: linear-gradient(180.96deg, #39289F 0.82%, #422F9C 129.1%);
   --contact-color: linear-gradient(176.32deg, #2211E7 -26.24%, #383837 96.98%);
   --footer-color: #070707;
