@@ -1,0 +1,248 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  --footer-height: 5.5rem;
+
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --main-color: linear-gradient(180.96deg, #39289F 0.82%, #422F9C 129.1%);
+  --contact-color: linear-gradient(176.32deg, #2211E7 -26.24%, #383837 96.98%);
+  --footer-color: #070707;
+
+  --text-color: #FFFFFF;
+  --text-secondary-color: #E87D0E;
+
+  --icons-color: #DC7000;
+  --icons-shape-color:#1C140F;
+  --input-color: #CECECE;
+  --button-details-color: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
+  --box-color: #1C140F;
+
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: 'Poppins', sans-serif;
+  --big-font-size: 1.25rem;
+  --normal-font-size: .930rem;
+  --small-font-size: .810rem;
+
+  /*========== z index ==========*/
+  --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+  :root {
+    --big-font-size: 2rem;
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+  }
+  
+  body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3 {
+    color: var(--text-color);
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /*=============== REUSABLE CSS CLASSES ===============*/
+  .container {
+    max-width: 1024px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  
+  .section {
+    padding: 4.5rem 0 1rem;
+  }
+  
+  .section__height {
+    height: 100vh;
+  }
+
+  /*=============== HEADER & NAV ===============*/
+  .main {
+    position: relative;
+    background: var(--main-color);
+    transition: .4s;
+  }
+  
+  .header {
+    width: 100%;
+    background: var(--main-color);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+  }
+  
+  .header__nav {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header__logo, .header__content {
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+  }
+  
+  .header__logo {
+    font-weight: 800;
+  }
+  
+  .header__content {
+    font-size: 1.15rem;
+    cursor: pointer;
+  }
+  
+  .footer {
+    width: 100%;
+    background-color: var(--footer-color);
+    margin-top: 8rem;
+    bottom: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+  }
+  
+  .footer__content {
+    height: var(--footer-height);
+    display: flex;
+    justify-content: center;
+    column-gap: 0.50rem;
+    align-items: center;
+  }
+
+  /*=============== BREAKPOINTS ===============*/
+  
+  /* For small devices */
+  @media screen and (max-width: 320px) {
+    .container {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    .section__home-content {
+      margin-bottom: -5.55rem;
+    }
+    .section__trending-games {
+      margin-bottom: -5.55rem;
+    }
+    .section__top-game-content {
+      margin-bottom: -5.55rem;
+    }
+    .section__services-content {
+      margin-bottom: -5.55rem;
+    }
+    .section__projects-content {
+      margin-bottom: -5.55rem;
+    }
+    .section__subscribe-content {
+      margin-bottom: -5.55rem;
+    }
+    .footer {
+      margin-top: 6rem;
+    }
+  }
+  
+  /* For small to medium devices */
+  @media screen and (min-width: 320px) and (max-width: 620px) {
+    .section__home-content {
+      margin-bottom: -5.55rem;
+    }
+    .section__trending-games {
+      margin-bottom: -5.55rem;
+    }
+    .section__top-game-content {
+      margin-bottom: -5.55rem;
+    }
+    .section__services-content {
+      margin-bottom: -5.55rem;
+    }
+    .section__projects-content {
+      margin-bottom: -5.55rem;
+    }
+    .section__subscribe-content {
+      margin-bottom: -5.55rem;
+    }
+    .footer {
+      margin-top: 6rem;
+    }
+  }
+  
+  /* For medium devices */
+  @media screen and (min-width: 620px) and (max-width: 1024px) {
+    .section__home-content {
+      margin-bottom: -6rem;
+    }
+    .section__trending-games {
+      margin-bottom: -6rem;
+    }
+    .section__top-game-content {
+      margin-bottom: -6rem;
+    }
+    .section__services-content {
+      margin-bottom: -6rem;
+    }
+    .section__projects-content {
+      margin-bottom: -6rem;
+    }
+    .section__subscribe-content {
+      margin-bottom: -6rem;
+    }
+    .footer {
+      margin-top: 7rem;
+    }
+  }
+  
+  @media screen and (min-width: 767px) {
+    
+  }
+  
+  /* For large devices */
+  @media screen and (min-width: 1024px) {
+    .container {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .section {
+      padding: 7rem 0 0rem;
+    }
+    .header__nav {
+      height: calc(var(--header-height) + 1.5rem);
+    }
+  }
+
+
