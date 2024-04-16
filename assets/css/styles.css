@@ -197,7 +197,14 @@
     left: 0;
   }
 
-
+  /*=============== PROJECTS SECTION ===============*/
+  .section__projects-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 
 
   /*=============== SUBSCRIBE SECTION ===============*/
@@ -214,7 +221,11 @@
   }
 
   .subscribe__description {
-    margin-top: .8rem;
+    margin-top: 2rem;
+  }
+
+  .subscribe__box-description {
+    margin-top: 1rem;
   }
 
   .subscribe__input-area {
