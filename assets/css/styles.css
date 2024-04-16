@@ -20,6 +20,7 @@
   --icons-shape-color:#1C140F;
   --input-color: #CECECE;
   --button-details-color: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
+  --button-see-all-color: #5242aa;
   --box-color: #1C140F;
 
   /*========== Font and typography ==========*/
@@ -91,6 +92,16 @@
   
   .section__height {
     height: 100vh;
+  }
+
+  .section__see-all-button {
+    width: 139px;
+    height: 57px;
+    border-radius: 10px;
+    border: none;
+    color: var(--text-color);
+    background-color: var(--button-see-all-color);
+    font-size: var(--normal-font-size);
   }
 
   .main {
@@ -202,10 +213,68 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
     flex-direction: column;
   }
 
+  .projects__description {
+    margin-top: 2rem;
+    width: 40%;
+    text-align: center;
+  }
+
+  .projects__images-area {
+    width: auto;
+    margin-top: 5rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .projects__images-area img {
+    margin: 10px
+  }
+
+  .projects__image1 {
+    width: 382px;
+    height: 223px;
+    border-radius: 20px;
+  }
+
+  .projects__image2 {
+    width: 382px;
+    height: 223px;
+    border-radius: 20px;
+  }
+
+  .projects__image3 {
+    width: 352px;
+    height: 223px;
+    border-radius: 20px;
+  }
+
+  .projects__image4 {
+    width: 246px;
+    height: 223px;
+    border-radius: 20px;
+  }
+
+  .projects__image5 {
+    width: 401px;
+    height: 223px;
+    border-radius: 20px;
+  }
+
+  .projects__image6 {
+    width: 469px;
+    height: 223px;
+    border-radius: 20px;
+  }
+
+  .projects__button-area {
+    margin-top: 4rem;
+  }
 
   /*=============== SUBSCRIBE SECTION ===============*/
   .subscribe__box {
