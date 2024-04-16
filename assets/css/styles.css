@@ -4,7 +4,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 5.5rem;
   --footer-height: 5.5rem;
 
   /*========== Colors ==========*/
@@ -54,10 +54,11 @@
   }
   
   body {
+    background: var(--main-color);
     font-family: var(--body-font);
     font-size: var(--normal-font-size);
     color: var(--text-color);
-    overflow-x: hidden;
+    transition: .4s;
   }
   
   h1, h2, h3 {
@@ -79,7 +80,7 @@
   
   /*=============== REUSABLE CSS CLASSES ===============*/
   .container {
-    max-width: 1024px;
+    max-width: 1440px;
     margin-left: 1.5rem;
     margin-right: 1.5rem;
   }
@@ -92,12 +93,11 @@
     height: 100vh;
   }
 
-  /*=============== HEADER & NAV ===============*/
   .main {
-    position: relative;
-    background: var(--main-color);
-    transition: .4s;
+    overflow: hidden;
   }
+
+  /*=============== HEADER & NAV ===============*/
   
   .header {
     width: 100%;
@@ -106,21 +106,19 @@
     top: 0;
     left: 0;
     z-index: var(--z-fixed);
+    transition: box-shadow .4s;
   }
   
-  .header__nav {
+  .nav {
+    position: relative;
     height: var(--header-height);
     display: flex;
     justify-content: space-between;
     align-items: center;
   }
-  
-  .header__logo, .header__content {
-    font-size: var(--normal-font-size);
+
+  .nav__logo {
     color: var(--text-color);
-  }
-  
-  .header__logo {
     font-weight: 800;
   }
   
@@ -128,7 +126,78 @@
     font-size: 1.15rem;
     cursor: pointer;
   }
+
+  .nav__close,
+  .nav__toggle {
+    display: flex;
+    font-size: 1.5rem;
+    cursor: pointer;
+  }
+
+  .nav__close {
+    position: absolute;
+    top: 1.15rem;
+    right: 1.15rem;
+  }
+
+  .nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    align-items: center;
+  }
+
+  .nav__link {
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    font-weight: 500;
+    transition: color .3s;
+    cursor: pointer;
+  }
+
+  .nav__link:hover {
+    color: var(--input-color);
+  }
+
+  .active-link {
+
+  }
+
+  .nav__button {
+    border: none;
+    width: 130px;
+    padding: .5rem 0 .5rem 0;
+    border-radius: 8px;
+    font-family: var(--body-font);
+    background: var(--button-details-color);
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+  }
+
   
+  /* Navigation for mobile devices */
+  @media screen and (max-width: 1150px) {
+    .nav__menu {
+      position: fixed;
+      left: -100%;
+      top: 0;
+      background-color: var(--footer-color);
+      width: 70%;
+      height: 100%;
+      padding: 7rem 1.5rem 2.5rem 4rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: left .4s;
+    }
+  }
+
+  /* Show menu */
+  .show-menu {
+    left: 0;
+  }
+  
+  /*=============== FOOTER ===============*/
   .footer {
     width: 100%;
     background-color: var(--footer-color);
@@ -241,7 +310,23 @@
       padding: 7rem 0 0rem;
     }
     .header__nav {
-      height: calc(var(--header-height) + 1.5rem);
+      height: calc(var(--header-height) + 2.5rem);
+    }
+    .nav__close,
+    .nav__toggle {
+      display: none;
+    }
+    .nav__link {
+      font-size: var(--normal-font-size);
+    }
+    .nav__menu {
+      display: flex;
+      column-gap: 3rem;
+      align-items: center;
+    }
+    .nav__list {
+      flex-direction: row;
+      column-gap: 6rem;
     }
   }
 
