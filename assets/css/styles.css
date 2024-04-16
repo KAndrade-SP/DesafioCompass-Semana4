@@ -98,7 +98,6 @@
   }
 
   /*=============== HEADER & NAV ===============*/
-  
   .header {
     width: 100%;
     background: var(--main-color);
@@ -159,19 +158,20 @@
     color: var(--input-color);
   }
 
-  .active-link {
+  /* .active-link {
 
-  }
+  } */
 
   .nav__button {
     border: none;
     width: 130px;
     padding: .5rem 0 .5rem 0;
-    border-radius: 8px;
+    border-radius: 6px;
     font-family: var(--body-font);
     background: var(--button-details-color);
     color: var(--text-color);
     font-size: var(--small-font-size);
+    cursor: pointer;
   }
 
   
@@ -196,7 +196,57 @@
   .show-menu {
     left: 0;
   }
+
+
+
+
+  /*=============== SUBSCRIBE SECTION ===============*/
+  .subscribe__box {
+    width: auto;
+    background-color: var(--box-color);
+    border-radius: 15px;
+    padding: 3rem 3rem 3rem 3rem;
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .subscribe__description {
+    margin-top: .8rem;
+  }
+
+  .subscribe__input-area {
+    position: relative; 
+    display: inline-block;
+  }
+
+  .subscribe__input {
+    width: 385px;
+    height: 48px;
+    border-radius: 8px;
+    border: none;
+    padding: 0 .8rem 0 .8rem;
+  }
+
+  .subscribe__button {
+    overflow: visible;
+    position: absolute;
+    float: right;
+    top: 0; 
+    right: 0; 
+    border: none; 
+    padding: .5rem 0 .5rem 0;
+    border-radius: 6px;
+    font-family: var(--body-font);
+    background: var(--button-details-color);
+    color: var(--text-color);
+    font-size: var(--small-font-size);
+    cursor: pointer;
+  }
   
+
   /*=============== FOOTER ===============*/
   .footer {
     width: 100%;
