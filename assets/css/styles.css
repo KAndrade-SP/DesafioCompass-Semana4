@@ -227,6 +227,56 @@
     left: 0;
   }
 
+  /*=============== TRENDING GAMES SECTION ===============*/
+  .section__trending-games-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+  }
+
+  .trending-games__title-area {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding-left: 6.50rem;
+    padding-right: 6.50rem;
+  }
+
+  .trending-games__title {
+    font-size: var(--big-font-size);
+  }
+
+  .trending-games__area {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    column-gap: 3rem;
+  }
+
+  .trending-games__image {
+    width: 275px;
+    height: 275px;
+    border-radius: 20px;
+  }
+
+  .trending-games__followers-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .7rem;
+    margin-top: 1rem;
+  }
+
+  .trending-games__followers {
+    font-weight: 500;
+    font-size: var(--see-all-button-font-size);
+  }
+
   /*=============== GAME OF THE WEEK SECTION ===============*/
   .section__top-game-content {
     display: flex;
@@ -243,16 +293,14 @@
     font-weight: 510;
   }
 
-  .top-game__subtitle {
-    font-weight: 510;
-  }
-
   .top-game__division {
-    display: flex;
-    flex-direction: row;
     margin-bottom: 4rem;
     margin-top: 5rem;
     max-width: 1140px;
+  }
+
+  .top-game__subtitle {
+    font-weight: 510;
   }
 
   .top-game__description {
