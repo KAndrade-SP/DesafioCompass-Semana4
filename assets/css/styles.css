@@ -5,7 +5,7 @@
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 5.5rem;
-  --footer-height: 5.5rem;
+  --footer-height: 23.5rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hex)*/
@@ -553,11 +553,40 @@
   }
   
   .footer__content {
+    width: 100%;
     height: var(--footer-height);
     display: flex;
-    justify-content: center;
-    column-gap: 0.50rem;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .footer__info-area {
+    display: flex;
+    padding: 0 4rem 4rem 4rem;
+    flex-direction: row;
+    column-gap: 4rem;
+  }
+
+  .footer__logo-area, .footer__about-area, .footer__contact-area {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .footer__copyright-area {
+    width: 100%;
+    height: auto;
+    padding-top: 3rem;
+    border-top: solid 1px #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer__span {
+    font-size: var(--smallest-font-size);
+    font-weight: 300;
   }
 
   /*=============== BREAKPOINTS ===============*/
