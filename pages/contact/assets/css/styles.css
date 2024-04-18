@@ -9,7 +9,7 @@
 
   /*========== Colors ==========*/
   /*Color mode HSL(hex)*/
-  --main-color: linear-gradient(180.96deg, #39289F 0.82%, #422F9C 129.1%);
+  --main-color: linear-gradient(180.96deg, #2211E7 0.82%, #383837 129.1%);
   --contact-color: linear-gradient(176.32deg, #2211E7 -26.24%, #383837 96.98%);
   --footer-color: #070707;
 
@@ -20,7 +20,6 @@
   --input-color: #CECECE;
   --button-form-color: #DC7000;
   --button-details-color: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
-  --button-see-all-color: #5242aa;
   --box-color: #1C140F;
 
   /*========== Font and typography ==========*/
@@ -30,7 +29,6 @@
 
   --biggest-font-size: 2.25rem;
   --big-font-size: 1.25rem;
-  --see-all-button-font-size: 1.15rem;
   --normal-font-size: .930rem;
   --small-font-size: .810rem;
   --smallest-font-size: .750rem;
@@ -43,7 +41,6 @@
   :root {
     --biggest-font-size: 3rem;
     --big-font-size: 2rem;
-    --see-all-button-font-size: 1.25rem;
     --normal-font-size: 1rem;
     --small-font-size: .875rem;
     --smallest-font-size: .815rem;
@@ -104,23 +101,6 @@
   
   .section__height {
     height: 100vh;
-  }
-
-  .section__see-all-button {
-    width: 139px;
-    height: 57px;
-    border-radius: 10px;
-    border: none;
-    color: var(--text-color);
-    background-color: var(--button-see-all-color);
-    font-family: var(--second-font);
-    font-size: var(--see-all-button-font-size);
-    font-weight: 500;
-    cursor: pointer;
-  }
-
-  .section__see-all-button:hover {
-    opacity: 0.8;
   }
 
   .main {
@@ -230,328 +210,6 @@
   /* Show menu */
   .show-menu {
     left: 0;
-  }
-
-  /*=============== HOME SECTION ===============*/
-  .section__home-content {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    margin-bottom: 2rem;
-    padding-left: 6.50rem;
-    padding-right: 6.50rem;
-  }
-
-  .home__division {
-    display: flex;
-    flex-direction: column;
-    row-gap: 3rem;
-    position: relative;
-  }
-
-  .home__span {
-    color: var(--text-secondary-color);
-    font-size: var(--see-all-button-font-size);
-    font-weight: 900;
-    -webkit-text-stroke-width: 1.2px;
-    -webkit-text-stroke-color: black;
-  }
-
-  .home__title {
-    width: 50%;
-    font-size: var(--biggest-font-size);
-    margin-top: -2rem;
-    margin-bottom: -1rem;
-  }
-
-  .home__p {
-    width: 50%;
-    line-height: 2;
-  }
-
-  .home__button {
-    width: 195px;
-    height: 53px;
-    border: none;
-    border-radius: 40px;
-    font-family: var(--body-font);
-    background: var(--button-details-color);
-    color: var(--text-color);
-    font-size: var(--normal-font-size);
-    cursor: pointer;
-  }
-
-  .home__button:hover {
-    opacity: 0.8;
-  }
-
-  .home__images-area {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .home__components {
-    width: 32%;
-    position: absolute;
-    top: 20%;
-    right: 20%;
-    z-index: 1;
-  }
-
-  .home__image {
-    width: 42%;
-    height: auto;
-    position: absolute;
-    top: 0%;
-    right: 1.5%;
-    z-index: 90;
-  }
-
-  /*=============== TRENDING GAMES SECTION ===============*/
-  .section__trending-games-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 2rem;
-  }
-
-  .trending-games__title-area {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding-left: 6.50rem;
-    padding-right: 6.50rem;
-  }
-
-  .trending-games__title {
-    font-size: var(--big-font-size);
-  }
-
-  .trending-games__area {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-top: 4rem;
-    column-gap: 3rem;
-  }
-
-  .trending-games__image {
-    width: 275px;
-    height: 275px;
-    border-radius: 20px;
-  }
-
-  .trending-games__followers-area {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    column-gap: .7rem;
-    margin-top: 1rem;
-  }
-
-  .trending-games__followers {
-    font-weight: 500;
-    font-size: var(--see-all-button-font-size);
-  }
-
-  /*=============== GAME OF THE WEEK SECTION ===============*/
-  .section__top-game-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    margin-bottom: 6rem;
-  }
-
-  .top-game__title {
-    width: 50%;
-    text-align: center;
-    font-size: var(--big-font-size);
-    font-weight: 510;
-  }
-
-  .top-game__division {
-    margin-bottom: 4rem;
-    margin-top: 5rem;
-    max-width: 1140px;
-  }
-
-  .top-game__subtitle {
-    font-weight: 510;
-  }
-
-  .top-game__description {
-    width: 50%;
-    margin-top: 2rem;
-    font-weight: 300;
-    line-height: 2;
-  }
-
-  .top-game__banner-area {
-    display: flex;
-    flex-direction: column;
-    position: relative;
-  }
-
-  .top-game__circles {
-    width: 196px;
-    height: 154px;
-    align-self: flex-end;
-    position: absolute;
-    top: -65px; 
-    right: 150px;
-    z-index: 1;
-  }
-
-  .top-game__banner {
-    width: 1140px;
-    max-width: auto;
-    height: 450px;
-    max-height: auto;
-    z-index: 3;
-  }
-
-  /*=============== SERVICES SECTION ===============*/
-  .background-image {
-    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)), url('../img/ruins-wallpaper.jpg');
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .section__services-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 1440px;
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
-  }
-
-  .services__title {
-    width: 45%;
-    text-align: center;
-  }
-
-  .services__description {
-    margin-top: 2rem;
-    width: 60%;
-    text-align: center;
-    font-weight: 300;
-    line-height: 2;
-  }
-
-  .services__area {
-    width: auto;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .services__division {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    row-gap: 1.50rem;
-    margin: 70px;
-  }
-
-  .services__circle-shape {
-    width: 65px;
-    height: 65px;
-    background-color: var(--text-color);
-    border-radius: 50%;
-    padding: .5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  .services__arrow {
-    width: 21px;
-    height: 18px;
-  }
-
-  /*=============== PROJECTS SECTION ===============*/
-  .section__projects-content {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-  }
-
-  .projects__description {
-    margin-top: 2rem;
-    width: 40%;
-    text-align: center;
-    font-weight: 300;
-    line-height: 2;
-  }
-
-  .projects__images-area {
-    width: auto;
-    margin-top: 5rem;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-  }
-
-  .projects__images-area img {
-    margin: 10px
-  }
-
-  .projects__image1 {
-    width: 382px;
-    height: 223px;
-    border-radius: 20px;
-  }
-
-  .projects__image2 {
-    width: 382px;
-    height: 223px;
-    border-radius: 20px;
-  }
-
-  .projects__image3 {
-    width: 352px;
-    height: 223px;
-    border-radius: 20px;
-  }
-
-  .projects__image4 {
-    width: 246px;
-    height: 223px;
-    border-radius: 20px;
-  }
-
-  .projects__image5 {
-    width: 401px;
-    height: 223px;
-    border-radius: 20px;
-  }
-
-  .projects__image6 {
-    width: 469px;
-    height: 223px;
-    border-radius: 20px;
-  }
-
-  .projects__button-area {
-    margin-top: 4rem;
   }
 
   /*=============== SUBSCRIBE SECTION ===============*/
@@ -677,6 +335,7 @@
     font-weight: 300;
   }
 
+
   /*=============== BREAKPOINTS ===============*/
   
   /* For small devices */
@@ -686,18 +345,6 @@
       margin-right: 1rem;
     }
     .section__home-content {
-      margin-bottom: -5.55rem;
-    }
-    .section__trending-games {
-      margin-bottom: -5.55rem;
-    }
-    .section__top-game-content {
-      margin-bottom: -5.55rem;
-    }
-    .section__services-content {
-      margin-bottom: -5.55rem;
-    }
-    .section__projects-content {
       margin-bottom: -5.55rem;
     }
     .section__subscribe-content {
@@ -713,18 +360,6 @@
     .section__home-content {
       margin-bottom: -5.55rem;
     }
-    .section__trending-games {
-      margin-bottom: -5.55rem;
-    }
-    .section__top-game-content {
-      margin-bottom: -5.55rem;
-    }
-    .section__services-content {
-      margin-bottom: -5.55rem;
-    }
-    .section__projects-content {
-      margin-bottom: -5.55rem;
-    }
     .section__subscribe-content {
       margin-bottom: -5.55rem;
     }
@@ -738,18 +373,6 @@
     .section__home-content {
       margin-bottom: -6rem;
     }
-    .section__trending-games {
-      margin-bottom: -6rem;
-    }
-    .section__top-game-content {
-      margin-bottom: -6rem;
-    }
-    .section__services-content {
-      margin-bottom: -6rem;
-    }
-    .section__projects-content {
-      margin-bottom: -6rem;
-    }
     .section__subscribe-content {
       margin-bottom: -6rem;
     }
@@ -758,18 +381,8 @@
     }
   }
   
-  @media screen and (max-width: 767px) {
-    .section__home-content {
-      flex-wrap: wrap-reverse;
-      margin-bottom: 1rem;
-    }
-  }
+  @media screen and (min-width: 768px) {
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    .section__home-content {
-      flex-wrap: wrap-reverse;
-      margin-bottom: .25rem;
-    }
   }
   
   /* For large devices */
@@ -801,5 +414,3 @@
       column-gap: 6rem;
     }
   }
-
-
