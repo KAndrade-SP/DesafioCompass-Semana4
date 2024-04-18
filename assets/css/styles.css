@@ -239,16 +239,17 @@
   .section__home-content {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     flex-direction: row;
     margin-bottom: 2rem;
-    padding-left: 6.50rem;
-    padding-right: 6.50rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
   }
 
   .home__division {
     display: flex;
     flex-direction: column;
-    row-gap: 3rem;
+    row-gap: 3.50rem;
     position: relative;
   }
 
@@ -297,16 +298,16 @@
     width: 32%;
     position: absolute;
     top: 20%;
-    right: 20%;
+    right: 22%;
     z-index: 1;
   }
 
   .home__image {
-    width: 42%;
+    width: 36%;
     height: auto;
     position: absolute;
-    top: 0%;
-    right: 1.5%;
+    top: -2%;
+    right: 11%;
     z-index: 90;
   }
 
@@ -323,8 +324,8 @@
     display: flex;
     width: 100%;
     justify-content: space-between;
-    padding-left: 6.50rem;
-    padding-right: 6.50rem;
+    padding-right: 10rem;
+    padding-left: 10rem;
   }
 
   .trending-games__title {
@@ -338,7 +339,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 4rem;
-    column-gap: 3rem;
+    column-gap: 2.50rem;
   }
 
   .trending-games__followers-area {
