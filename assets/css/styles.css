@@ -27,6 +27,8 @@
   /*.5rem = 8px | 1rem = 16px ...*/
   --body-font: 'Poppins', sans-serif;
   --second-font: 'Rubik', sans-serif;
+
+  --biggest-font-size: 2.25rem;
   --big-font-size: 1.25rem;
   --see-all-button-font-size: 1.15rem;
   --normal-font-size: .930rem;
@@ -39,6 +41,7 @@
 
 @media screen and (min-width: 968px) {
   :root {
+    --biggest-font-size: 3rem;
     --big-font-size: 2rem;
     --see-all-button-font-size: 1.25rem;
     --normal-font-size: 1rem;
@@ -227,6 +230,76 @@
     left: 0;
   }
 
+  /*=============== HOME SECTION ===============*/
+  .section__home-content {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 2rem;
+    padding-left: 6.50rem;
+    padding-right: 6.50rem;
+  }
+
+  .home__division {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+    position: relative;
+  }
+
+  .home__span {
+    color: var(--text-secondary-color);
+    font-size: var(--see-all-button-font-size);
+    font-weight: 900;
+    -webkit-text-stroke-width: 1.2px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .home__title {
+    width: 50%;
+    font-size: var(--biggest-font-size);
+    margin-top: -2rem;
+    margin-bottom: -1rem;
+  }
+
+  .home__p {
+    width: 50%;
+    line-height: 2;
+  }
+
+  .home__button {
+    width: 195px;
+    height: 53px;
+    border: none;
+    border-radius: 40px;
+    font-family: var(--body-font);
+    background: var(--button-details-color);
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+  }
+
+  .home__images-area {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__components {
+    width: 32%;
+    position: absolute;
+    top: 20%;
+    right: 20%;
+    z-index: 1;
+  }
+
+  .home__image {
+    width: 42%;
+    height: auto;
+    position: absolute;
+    top: 0%;
+    right: 1.5%;
+    z-index: 101;
+  }
+
   /*=============== TRENDING GAMES SECTION ===============*/
   .section__trending-games-content {
     display: flex;
@@ -307,6 +380,7 @@
     width: 50%;
     margin-top: 2rem;
     font-weight: 300;
+    line-height: 2;
   }
 
   .top-game__banner-area {
@@ -364,6 +438,7 @@
     width: 60%;
     text-align: center;
     font-weight: 300;
+    line-height: 2;
   }
 
   .services__area {
@@ -415,6 +490,7 @@
     width: 40%;
     text-align: center;
     font-weight: 300;
+    line-height: 2;
   }
 
   .projects__images-area {
@@ -499,12 +575,14 @@
     width: 45%;
     margin-top: 2rem;
     font-weight: 300;
+    line-height: 2;
   }
 
   .subscribe__box-description {
     margin-top: 1rem;
     font-weight: 300;
     width: 70%;
+    line-height: 1.5;
   }
 
   .subscribe__input-area {
@@ -670,8 +748,18 @@
     }
   }
   
-  @media screen and (min-width: 767px) {
-    
+  @media screen and (max-width: 767px) {
+    .section__home-content {
+      flex-wrap: wrap-reverse;
+      margin-bottom: 1rem;
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    .section__home-content {
+      flex-wrap: wrap-reverse;
+      margin-bottom: .25rem;
+    }
   }
   
   /* For large devices */
