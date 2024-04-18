@@ -4,7 +4,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 5.5rem;
+  --header-height: 7.5rem;
   --footer-height: 23.5rem;
 
   /*========== Colors ==========*/
@@ -122,6 +122,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .nav__logo {
@@ -210,6 +213,58 @@
   /* Show menu */
   .show-menu {
     left: 0;
+  }
+
+  /*=============== CONTACT HOME SECTION ===============*/
+  .section__contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1.50rem;
+  }
+
+  .contact__division {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .contact__title {
+    font-size: var(--big-font-size);
+    font-weight: 500;
+    text-align: center;
+  }
+
+  .contact__subtitle {
+    text-align: center;
+  }
+  
+  .contact__map {
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+  }
+
+  .contact__info {
+    display: flex;
+    flex-direction: row;
+    column-gap: 8rem;
+    margin-top: 4rem;
+  }
+
+  .contact__socials {
+    display: flex;
+    align-items: flex-end;
+
+    & .contact__social-span {
+        font-weight: 300;
+    }
+  }
+
+  .contact__vertical-line {
+    border-left: 2px solid #FFF;
+    height: 100px;
   }
 
   /*=============== SUBSCRIBE SECTION ===============*/
@@ -344,7 +399,7 @@
       margin-left: 1rem;
       margin-right: 1rem;
     }
-    .section__home-content {
+    .section__contact-content {
       margin-bottom: -5.55rem;
     }
     .section__subscribe-content {
@@ -357,7 +412,7 @@
   
   /* For small to medium devices */
   @media screen and (min-width: 320px) and (max-width: 620px) {
-    .section__home-content {
+    .section__contact-content {
       margin-bottom: -5.55rem;
     }
     .section__subscribe-content {
@@ -370,7 +425,7 @@
   
   /* For medium devices */
   @media screen and (min-width: 620px) and (max-width: 1024px) {
-    .section__home-content {
+    .section__contact-content {
       margin-bottom: -6rem;
     }
     .section__subscribe-content {

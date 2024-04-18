@@ -4,7 +4,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 5.5rem;
+  --header-height: 7.5rem;
   --footer-height: 23.5rem;
 
   /*========== Colors ==========*/
@@ -142,6 +142,9 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: -2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .nav__logo {
@@ -336,12 +339,6 @@
     justify-content: center;
     margin-top: 4rem;
     column-gap: 3rem;
-  }
-
-  .trending-games__image {
-    width: 275px;
-    height: 275px;
-    border-radius: 20px;
   }
 
   .trending-games__followers-area {
