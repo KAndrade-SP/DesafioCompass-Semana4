@@ -28,7 +28,10 @@ function sendMessage() {
     const validation = checkData(firstName, lastName, email, message)
 
     if (validation) {
-        console.log(validation)
+        localStorage.setItem("userData", JSON.stringify(validation))
+        const userData = JSON.parse(localStorage.getItem('userData'))
+        console.log(userData)
+        // localStorage.removeItem('userData')
     } else {
         //false
     }
