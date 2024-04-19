@@ -20,15 +20,15 @@ if (navClose) {
 /*=============== SUPPORT FORM ===============*/
 function sendMessage() {
 
-    let firstName = document.getElementById('first-name-input').value
-    let lastName = document.getElementById('last-name-input').value
-    let email = document.getElementById('email-input').value
-    let message = document.getElementById('description-text-area').value
+    const firstName = document.getElementById('first-name-input').value
+    const lastName = document.getElementById('last-name-input').value
+    const email = document.getElementById('email-input').value
+    const message = document.getElementById('description-text-area').value
 
     const validation = checkData(firstName, lastName, email, message)
 
     if (validation) {
-        //true
+        console.log(validation)
     } else {
         //false
     }
@@ -36,7 +36,6 @@ function sendMessage() {
 
 function checkData(firstName, lastName, email, message) {
 
-    let completeName
     const fName = firstName.trim().toLowerCase()
     const lName = lastName.trim().toLowerCase()
     const mail = email.trim()
@@ -50,9 +49,12 @@ function checkData(firstName, lastName, email, message) {
     } else {
 
         if (validName.test(fName) && validName.test(lName) && validEmail.test(mail)) {
-            completeName = capitalizeName(fName, lName)
-            console.log(completeName)
-            console.log('email válido ' + mail + '!')
+            const completeName = capitalizeName(fName, lName)
+            return {
+                nome: completeName,
+                email: mail,
+                message: msg
+            }
         } else {
             console.log('dados inválidos')
         }
