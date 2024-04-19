@@ -17,7 +17,7 @@
   --text-secondary-color: #E87D0E;
 
   --icons-shape-color:#1C140F;
-  --input-color: #CECECE;
+  --input-color: #2c2420;
   --button-form-color: #DC7000;
   --button-details-color: linear-gradient(92.48deg, #FA8305 2.08%, #FB9E3C 117.25%);
   --box-color: #1C140F;
@@ -265,6 +265,109 @@
   .contact__vertical-line {
     border-left: 2px solid #FFF;
     height: 100px;
+  }
+
+  /*=============== SUPPORT SECTION ===============*/
+  .section__support-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .support__title-area {
+    margin-bottom: 6rem;
+    text-align: center;
+    line-height: 2;
+  }
+
+  .support__title {
+    font-size: var(--big-font-size);
+    font-weight: 400;
+  }
+
+  .support__subtitle {
+    font-weight: 300;
+  }
+
+  .support__form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 3rem;
+  }
+
+  .support__name-area {
+    display: flex;
+    flex-direction: row;
+    column-gap: 1rem;
+  }
+
+  .support__division {
+    display: flex;
+    flex-direction: column;
+    row-gap: .25rem;
+  }
+
+  .support__name-area input {
+    width: 322px;
+    height: 56px;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    border-radius: 9px;
+    border: solid 1px #8f8c8a;
+    padding: 0 .8rem 0 2rem;
+    font-weight: 300;
+  }
+
+  #email-input {
+    width: 671px;
+    height: 56px;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    border-radius: 9px;
+    border: solid 1px #8f8c8a;
+    padding: 0 .8rem 0 2rem;
+    font-weight: 300;
+  }
+
+  #description-text-area {
+    width: 671px;
+    height: 260px;
+    background-color: var(--input-color);
+    color: var(--text-color);
+    font-family: var(--body-font);
+    border-radius: 9px;
+    border: solid 1px #8f8c8a;
+    padding: 2rem .8rem 0 2rem;
+    font-weight: 300;
+    resize: none;
+  }
+
+  #description-text-area::-webkit-scrollbar {
+    display: none;
+  }
+
+  .support__button {
+    align-self: flex-end;
+    border: none;
+    width: 193px;
+    height: 57px;
+    padding: .5rem 0 .5rem 0;
+    margin-left: -3rem;
+    border-radius: 10px;
+    font-family: var(--body-font);
+    background: var(--button-form-color);
+    color: var(--text-color);
+    font-size: var(--normal-font-size);
+    font-weight: 300;
+    cursor: pointer;
+  }
+
+  .support__button:hover {
+    opacity: 0.8;
   }
 
   /*=============== SUBSCRIBE SECTION ===============*/

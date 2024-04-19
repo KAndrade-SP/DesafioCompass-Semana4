@@ -16,5 +16,3 @@ if (navClose) {
         navMenu.classList.remove('show-menu')
     })
 }
-
-/*=============== REMOVE MENU MOBILE ===============*/
