@@ -43,7 +43,7 @@ function checkData(firstName, lastName, email, message) {
     const msg = message.trim() 
 
     const validName = /^[a-zA-ZÀ-ÿ' ]+$/
-    const validEmail = /\w+@\w+\.\w+/
+    const validEmail = /^\S+@\S+\.\S+$/
 
     if (fName === '' || lName === '' || mail === '' || msg === '') {
         console.log('campos vazios')
