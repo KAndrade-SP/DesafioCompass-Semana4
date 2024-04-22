@@ -75,3 +75,37 @@ function capitalizeName(firstName, lastName) {
 
     return completeName.join(" ")
 }
+
+/*=============== SUBSCRIBE FORM ===============*/
+function subscribe() {
+
+    const email = document.getElementById('subscribe-input').value
+    const validation = checkEmail(email)
+
+    if (validation) {
+        localStorage.setItem("subscribeContactData", JSON.stringify(validation))
+        const subscribeContactData = JSON.parse(localStorage.getItem('subscribeContactData'))
+        console.log(subscribeContactData)
+        // localStorage.removeItem('subscribeContactData')
+    } else {
+        //false
+    }
+}
+
+function checkEmail(email) {
+
+    const mail = email.trim()
+    const validEmail = /^\S+@\S+\.\S+$/
+
+    if (mail === '') {
+        console.log('campo vazio')
+    } else {
+
+        if (validEmail.test(mail)) {
+            return { email: mail }
+        } else {
+            console.log('dados inválidos')
+        }
+
+    }
+}

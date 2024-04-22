@@ -364,6 +364,7 @@
       left: 0;
       position: absolute;
       overflow: visible;
+      z-index: 99;
   }
 
   .support__title-area {
@@ -461,6 +462,7 @@
     font-size: var(--normal-font-size);
     font-weight: 300;
     cursor: pointer;
+    z-index: var(--z-fixed);
   }
 
   .support__button:hover {
