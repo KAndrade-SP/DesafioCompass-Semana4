@@ -46,6 +46,12 @@
                                     News
                                 </a>
                             </li>
+
+                            <li>
+                                <a href="#">
+                                    <button class="nav__button">Contact us</button>
+                                </a>
+                            </li>
                         </ul>
 
                         <div class="nav__close" id="nav-close">
@@ -136,7 +142,11 @@
                             <textarea type="text" id="description-text-area" maxlength="200"></textarea>
                         </div>
 
-                        <button class="support__button" onclick="sendMessage()">Get in touch</button>
+                        <div class="support__division-button">
+                            <span id="support-division-span"></span>
+                            <button class="support__button" onclick="sendMessage()">Get in touch</button>
+                        </div>
+                        
                     </div>
 
                     <img src="./assets/img/Vector4.svg" class="support__svg-bottom">
@@ -155,13 +165,16 @@
                                 We promise not to spam you!</p>
                         </div>
                         
-                        <div class="subscribe__input-area">
-                            <input 
-                                type="email" 
-                                class="subscribe__input" 
-                                id="subscribe-input"
-                                placeholder="Enter e-mail address">
-                            <button class="subscribe__button" onclick="subscribe()">Continue</button>
+                        <div class="subscribe__input-content">
+                            <span id="subscribe-span"></span>
+                            <div class="subscribe__input-area">
+                                <input 
+                                    type="email" 
+                                    class="subscribe__input" 
+                                    id="subscribe-input"
+                                    placeholder="Enter e-mail address">
+                                <button class="subscribe__button" onclick="subscribe()">Continue</button>
+                            </div>
                         </div>
                     </div>
                 </div>       
