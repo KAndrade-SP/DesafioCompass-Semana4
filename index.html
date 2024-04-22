@@ -14,7 +14,7 @@
             
         </nav>
 
-        <main class="main show-menu" id="main">          
+        <main class="main" id="main">          
             <header class="header" id="header">
                 <nav class="nav container">
                     <a href="#" class="nav__logo">
@@ -55,19 +55,20 @@
                         </ul>
 
                         <div class="nav__close" id="nav-close">
-                            <ion-icon name="close-outline"></ion-icon>
+                            <p>X</p>
                         </div>                 
                     </div>
 
                     <div class="nav__toggle" id="nav-toggle">
-                        <ion-icon name="grid-outline"></ion-icon>
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
                     </div>
                 </nav>              
             </header>
 
             <section class="section container" id="home">
                 <div class="section__home-content">
-                    
                     <div class="home__division">
                         <span class="home__span">Proved By prodesigner</span>
                         <h1 class="home__title">Work that we produce for our clients</h1>
@@ -95,38 +96,38 @@
                     <div class="trending-games__area">
 
                         <div>
-                            <img src="./assets/img/game1.png" alt="Trending game 1">
+                            <img src="./assets/img/game1.png" class="trending__first-game" alt="Trending game 1">
                             
                             <div class="trending-games__followers-area">
                                 <img src="./assets/img/fireIcon.png" alt="Fire icon">
-                                <span class="trending-games__followers">40 Followers</span>
+                                <p class="trending-games__followers">40 Followers</p>
                             </div>
                         </div>
 
                         <div>
-                            <img src="./assets/img/game2.png" alt="Trending game 1">
+                            <img src="./assets/img/game2.png" class="trending__second-game" alt="Trending game 2">
                             
                             <div class="trending-games__followers-area">
                                 <img src="./assets/img/fireIcon.png" alt="Fire icon">
-                                <span class="trending-games__followers">40 Followers</span>
+                                <p class="trending-games__followers">40 Followers</p>
                             </div>
                         </div>
 
                         <div>
-                            <img src="./assets/img/game3.png" alt="Trending game 1">
+                            <img src="./assets/img/game3.png" class="trending__third-game" alt="Trending game 3">
                             
                             <div class="trending-games__followers-area">
                                 <img src="./assets/img/fireIcon.png" alt="Fire icon">
-                                <span class="trending-games__followers">40 Followers</span>
+                                <p class="trending-games__followers">40 Followers</p>
                             </div>
                         </div>
 
                         <div>
-                            <img src="./assets/img/game4.png" alt="Trending game 1">
+                            <img src="./assets/img/game4.png" class="trending__fourth-game" alt="Trending game 4">
                             
                             <div class="trending-games__followers-area">
                                 <img src="./assets/img/fireIcon.png" alt="Fire icon">
-                                <span class="trending-games__followers">40 Followers</span>
+                                <p class="trending-games__followers">40 Followers</p>
                             </div>
                         </div>
 
@@ -149,7 +150,7 @@
 
                     <div class="top-game__banner-area">
                         <img src="./assets/img/Group-Circles.png" class="top-game__circles" alt="Group of circles">
-                        <img src="./assets/img/spiderMan-banner.jpg" class="top-game__banner" alt="Spider-Man Banner"> 
+                        <img src="./assets/img/spiderMan-banner.png" class="top-game__banner" alt="Spider-Man Banner"> 
                     </div>
                 </div>
             </section>
@@ -167,7 +168,7 @@
                                     <img src="./assets/img/servicesIcon-smartphone.png" alt="Smartphone icon">
                                 </div>
                             </div>
-                            <span class="services__text">Mobile Game Development</span>
+                            <p class="services__text">Mobile Game Development</p>
                             <img src="./assets/img/arrow.png" class="services__arrow" alt="Arrow icon">
                         </div>
 
@@ -177,7 +178,7 @@
                                     <img src="./assets/img/servicesIcon-pc.png" alt="PC icon">
                                 </div>
                             </div>
-                            <span class="services__text">PC Game Development</span>
+                            <p class="services__text">PC Game Development</p>
                             <img src="./assets/img/arrow.png" class="services__arrow" alt="Arrow icon">
                         </div>
 
@@ -187,7 +188,7 @@
                                     <img src="./assets/img/servicesIcon-ps4.png" alt="PS4 icon">
                                 </div>
                             </div>
-                            <span class="services__text">PS4 Game Development</span>
+                            <p class="services__text">PS4 Game Development</p>
                             <img src="./assets/img/arrow.png" class="services__arrow" alt="Arrow icon">
                         </div>
 
@@ -197,7 +198,7 @@
                                     <img src="./assets/img/servicesIcon-vrGlasses.png" alt="VR Glasses icon">
                                 </div>
                             </div>
-                            <span class="services__text">AR/VR Solutions</span>
+                            <p class="services__text">AR/VR Solutions</p>
                             <img src="./assets/img/arrow.png" class="services__arrow" alt="Arrow icon">
                         </div>
 
@@ -207,7 +208,7 @@
                                     <img src="./assets/img/servicesIcon-desktop.png" alt="Desktop icon">
                                 </div>
                             </div>
-                            <span class="services__text">AR/VR Design</span>
+                            <p class="services__text">AR/VR Design</p>
                             <img src="./assets/img/arrow.png" class="services__arrow" alt="Arrow icon">
                         </div>
 
@@ -217,7 +218,7 @@
                                     <img src="./assets/img/servicesIcon-3dCube.png" alt="3D Cube icon">
                                 </div>
                             </div>
-                            <span class="services__text">3D Modelings</span>
+                            <p class="services__text">3D Modelings</p>
                             <img src="./assets/img/arrow.png" class="services__arrow" alt="Arrow icon">
                         </div>
                         
@@ -257,14 +258,14 @@
                                 We promise not to spam you!</p>
                         </div>
                         
-                        <div class="subscribe__input-area">
+                        <form class="subscribe__input-area">
                             <input 
                                 type="email" 
                                 class="subscribe__input" 
                                 id="subscribe-input"
                                 placeholder="Enter e-mail address">
                             <button class="subscribe__button">Continue</button>
-                        </div>
+                        </form>
                     </div>
                 </div>       
             </section>
@@ -274,14 +275,14 @@
 
                     <div class="footer__info-area">
                         <div class="footer__logo-area">
-                            <span>LOGO</span>
+                            <p class="footer-logo">LOGO</p>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <span>@Logo</span>
+                            <p>@Lorem</p>
                         </div>
 
                         <div class="footer__about-area">
-                            <span>About us</span>
-                            <ul class="footer__about-list">
+                            <p>About us</p>
+                            <ul>
                                 <li>Zeux</li>
                                 <li>Portfolio</li>
                                 <li>Careers</li>
@@ -290,27 +291,28 @@
                         </div>
 
                         <div class="footer__contact-area">
-                            <span>Contact us</span>
+                            <p>Contact us</p>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <span>+908 89097 890</span>
+                            <p>+908 89097 890</p>
                         </div>
 
                         <div class="footer__icons-area">
-                            
+                            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="./assets/img/face-footer-icon.png" alt="Facebook Icon"></a>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/insta-footer-icon.png" alt="Instagram Icon"></a>
+                            <a href="https://twitter.com/home" target="_blank"><img src="./assets/img/twitter-footer-icon.png" alt="Twitter Icon"></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><img src="./assets/img/linked-footer-icon.png" alt="LinkedIn Icon"></a> 
                         </div>
                     </div>
                     
                     <div class="footer__copyright-area">
                         <span class="footer__span">Copyright ® 2022 prodesigner All rights Rcerved</span>
-                    </div>
+                    </div> 
                     
                 </nav>       
             </footer>
         </main>
 
         <script src="assets/js/main.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
 

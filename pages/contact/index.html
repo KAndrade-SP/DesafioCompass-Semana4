@@ -14,35 +14,35 @@
             
         </nav>
 
-        <main class="main show-menu" id="main">          
+        <main class="main" id="main">          
             <header class="header" id="header">
                 <nav class="nav container">
-                    <a href="#" class="nav__logo">
+                    <a href="../../index.html" class="nav__logo">
                         LOGO
                     </a>
 
                     <div class="nav__menu" id="nav-menu">
                         <ul class="nav__list">
                             <li>
-                                <a href="#" class="nav__link">
+                                <a href="../../index.html" class="nav__link">
                                     Home
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="nav__link">
+                                <a href="/" class="nav__link">
                                     About us
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="nav__link">
+                                <a href="/" class="nav__link">
                                     Portfolio
                                 </a>
                             </li>
 
                             <li>
-                                <a href="#" class="nav__link">
+                                <a href="/" class="nav__link">
                                     News
                                 </a>
                             </li>
@@ -53,12 +53,14 @@
                         </ul>
 
                         <div class="nav__close" id="nav-close">
-                            <ion-icon name="close-outline"></ion-icon>
+                            <p>X</p>
                         </div>                 
                     </div>
 
                     <div class="nav__toggle" id="nav-toggle">
-                        <ion-icon name="grid-outline"></ion-icon>
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
                     </div>
                 </nav>              
             </header>
@@ -66,7 +68,7 @@
             <section class="section container" id="contact">
                 <div class="section__contact-content">
                     <div class="contact__breadcrumb">
-                        <span>Home   > Contact us</span>
+                        <p>Home   > <span class="contact__breadcrumb__span">Contact us</span></p>
                     </div>
 
                     <div class="contact__division">
@@ -78,32 +80,42 @@
                     <div class="contact__info">
 
                         <div class="contact__socials">
-                            <span class="contact__social-span">Follow us</span>
+                            <p class="contact__social-p">Follow us</p>
+                            <div class="contact__icons">
+                                <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="./assets/img/facebookIcon.png" alt="Facebook Icon"></a>
+                                <a href="https://www.instagram.com/" target="_blank"><img src="./assets/img/instagramIcon.png" alt="Instagram Icon"></a>
+                                <a href="https://twitter.com/home" target="_blank"><img src="./assets/img/twitterIcon.png" alt="Twitter Icon"></a>
+                                <a href="https://www.linkedin.com/" target="_blank"><img src="./assets/img/linkedInIcon.png" alt="LinkedIn Icon"></a>
+                            </div>
                         </div>
 
                         <div class="contact__vertical-line"></div>
 
                         <div class="contact__phone">
-                            <span class="contact__phone-span">+94 4444 5555 6</span>
+                            <img src="./assets/img/phoneIcon.png" alt="Phone Icon">
+                            <p class="contact__phone-p">+94 4444 5555 6</p>
                         </div>
 
                         <div class="contact__vertical-line"></div>
 
                         <div class="contact__local">
+                            <img src="./assets/img/localizationIcon.png" alt="Localization Icon">
                             <p class="contact__local-p">but also the leap into electronic typesetting.</p>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="section container" id="support">
+            <section class="section__support support__container" id="support">
                 <div class="section__support-content">
+                    <img src="./assets/img/Vector3.svg" class="support__svg-top">
+                    
                     <div class="support__title-area">
                         <h1 class="support__title">Say hello</h1>
                         <p class="support__subtitle">Lorem Ipsum is simply dummy text of the printing.</p>
                     </div>
 
-                    <div class="support__form">
+                    <form class="support__form">
                         <div class="support__name-area">
 
                             <div class="support__division">
@@ -129,7 +141,9 @@
                         </div>
 
                         <button class="support__button" onclick="sendMessage()">Get in touch</button>
-                    </div>
+                    </form>
+
+                    <img src="./assets/img/Vector4.svg" class="support__svg-bottom">
                 </div>
             </section>
 
@@ -145,31 +159,30 @@
                                 We promise not to spam you!</p>
                         </div>
                         
-                        <div class="subscribe__input-area">
+                        <form class="subscribe__input-area">
                             <input 
                                 type="email" 
                                 class="subscribe__input" 
                                 id="subscribe-input"
                                 placeholder="Enter e-mail address">
                             <button class="subscribe__button">Continue</button>
-                        </div>
+                        </form>
                     </div>
                 </div>       
             </section>
 
             <footer class="footer" id="footer">
                 <nav class="footer__content">
-
                     <div class="footer__info-area">
                         <div class="footer__logo-area">
-                            <span>LOGO</span>
+                            <p class="footer-logo">LOGO</p>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <span>@Logo</span>
+                            <p>@Lorem</p>
                         </div>
 
                         <div class="footer__about-area">
-                            <span>About us</span>
-                            <ul class="footer__about-list">
+                            <p>About us</p>
+                            <ul>
                                 <li>Zeux</li>
                                 <li>Portfolio</li>
                                 <li>Careers</li>
@@ -178,27 +191,27 @@
                         </div>
 
                         <div class="footer__contact-area">
-                            <span>Contact us</span>
+                            <p>Contact us</p>
                             <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                            <span>+908 89097 890</span>
+                            <p>+908 89097 890</p>
                         </div>
 
                         <div class="footer__icons-area">
-                            
+                            <a href="https://www.facebook.com/?locale=pt_BR" target="_blank"><img src="../../assets/img/face-footer-icon.png" alt="Facebook Icon"></a>
+                            <a href="https://www.instagram.com/" target="_blank"><img src="../../assets/img/insta-footer-icon.png" alt="Instagram Icon"></a>
+                            <a href="https://twitter.com/home" target="_blank"><img src="../../assets/img/twitter-footer-icon.png" alt="Twitter Icon"></a>
+                            <a href="https://www.linkedin.com/" target="_blank"><img src="../../assets/img/linked-footer-icon.png" alt="LinkedIn Icon"></a> 
                         </div>
                     </div>
                     
                     <div class="footer__copyright-area">
                         <span class="footer__span">Copyright ® 2022 prodesigner All rights Rcerved</span>
-                    </div>
-                    
+                    </div> 
                 </nav>       
             </footer>
         </main>
 
         <script src="assets/js/main.js"></script>
-        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     </body>
 </html>
 
