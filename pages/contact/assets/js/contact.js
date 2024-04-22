@@ -63,7 +63,6 @@ function checkData(firstName, lastName, email, message) {
         } else {
             spanElement.innerText = "There is invalid data in the form"
         }
-
     }
 }
 

@@ -28,8 +28,6 @@ function subscribe() {
         const subscribeHomeData = JSON.parse(localStorage.getItem('subscribeHomeData'))
         console.log(subscribeHomeData)
         // localStorage.removeItem('subscribeHomeData')
-    } else {
-        //false
     }
 }
 
