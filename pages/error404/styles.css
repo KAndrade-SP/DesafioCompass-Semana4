@@ -89,9 +89,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-right: 10rem;
-    padding-left: 10rem;
     row-gap: 5rem;
+    width: 100%;
   }
 
   .home__title {
